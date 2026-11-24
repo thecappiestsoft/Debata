@@ -1,0 +1,14 @@
+/* DEBATA! – Arena Argumentów | css/print.css
+   Style wydruku raportu (Drukuj / Zapisz jako PDF). */
+@media print{
+  body{background:#fff}
+  .top,.nav,.noprint,#toasts,.drawer{display:none!important}
+  main{max-width:none;padding:0}
+  .card{box-shadow:none;border-color:#ccc;break-inside:avoid}
+  .printonly{display:block}
+  textarea{display:none}
+  .foot{background:#fff;color:#333;border-top:1px solid #999}
+  .foot .copy{color:#000}
+  .thesis{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .bar .fl,.pair .fl,.tag{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}

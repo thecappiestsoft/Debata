@@ -1,0 +1,59 @@
+/* DEBATA! – Arena Argumentów | css/dark.css
+   Tryb ciemny (html[data-theme=dark]) oraz wygląd przełącznika motywu. */
+/* ---------- tryb ciemny ---------- */
+html[data-theme=dark]{color-scheme:dark;
+  --navy:#24375e; --navy2:#2f4675; --hd:#efe6cc; --gold:#c99a2e; --gold2:#e6c76a; --goldl:#3a3120;
+  --paper:#1c2335; --paper2:#252e44; --line:#384260; --ink:#e6e1d3; --muted:#aaa392;
+  --P:#3f76cc; --Pl:#1b2b48; --Pd:#a9c4f2; --O:#c94b42; --Ol:#3d2321; --Od:#f2aea8;
+  --ok:#5cc28a; --warn:#f0a83a; --bad:#f07a70;
+  --sh:0 1px 2px rgba(0,0,0,.35),0 8px 24px rgba(0,0,0,.4)}
+html[data-theme=dark] body{background:#121726;background-image:radial-gradient(rgba(255,255,255,.035) 1px,transparent 1.2px),linear-gradient(180deg,#131a2b,#0f1422);background-size:16px 16px,100% 100%}
+html[data-theme=dark] .top,html[data-theme=dark] .foot{background:#0b1020}
+html[data-theme=dark] .thesis,html[data-theme=dark] .tile.main{background:#0f1830}
+html[data-theme=dark] .btn{background:var(--paper2)}
+html[data-theme=dark] .btn:hover{background:#2f3a55}
+html[data-theme=dark] .btn.pri{background:var(--navy)}
+html[data-theme=dark] .btn.pri:hover{background:var(--navy2)}
+html[data-theme=dark] .btn.gold{background:var(--gold)}
+html[data-theme=dark] .btn.P{background:var(--P)}
+html[data-theme=dark] .btn.O{background:var(--O)}
+html[data-theme=dark] .btn.ghost{background:transparent}
+html[data-theme=dark] .btn.ghost:hover{background:var(--paper2)}
+html[data-theme=dark] .btn.danger{background:transparent;color:var(--bad);border-color:var(--bad)}
+html[data-theme=dark] .vbox .btn{background:rgba(255,255,255,.15)}
+html[data-theme=dark] .inp,html[data-theme=dark] select.inp,html[data-theme=dark] textarea.inp{background:#141a2a;border-color:#3b4562;color:var(--ink)}
+html[data-theme=dark] textarea.zeszyt{background-color:#161c2d;background-image:linear-gradient(90deg,transparent 34px,rgba(232,120,115,.55) 34px,rgba(232,120,115,.55) 35px,transparent 35px),repeating-linear-gradient(180deg,transparent 0,transparent 27px,rgba(140,170,220,.2) 27px,rgba(140,170,220,.2) 28px)}
+html[data-theme=dark] .opt,html[data-theme=dark] .tcard,html[data-theme=dark] .argcard,html[data-theme=dark] .qa,html[data-theme=dark] .vcard,html[data-theme=dark] .match{background:#212a3f}
+html[data-theme=dark] .opt.on,html[data-theme=dark] .tcard.sel,html[data-theme=dark] .match.final{background:var(--goldl)}
+html[data-theme=dark] .timer .trk{stroke:#2c3550}
+html[data-theme=dark] .timer .rng{stroke:var(--gold2)}
+html[data-theme=dark] .timer.warn .rng{stroke:var(--warn)}
+html[data-theme=dark] .timer.over .rng{stroke:var(--bad)}
+html[data-theme=dark] .timer.over{background:radial-gradient(circle,rgba(201,75,66,.22) 55%,transparent 56%)}
+html[data-theme=dark] .prog button.done{background:#262d3d;border-color:#4a4636}
+html[data-theme=dark] .script,html[data-theme=dark] .feedback{background:#231f16}
+html[data-theme=dark] .bar .tr,html[data-theme=dark] .pair .tr{background:#2c3550}
+html[data-theme=dark] .notice.bad{background:#3a1f1f}
+html[data-theme=dark] .tag{color:#ecc96e}
+html[data-theme=dark] .tag.P{color:var(--Pd)}
+html[data-theme=dark] .tag.O{color:var(--Od)}
+html[data-theme=dark] .tag.gray{background:#2c3242;color:#cbc5b4}
+html[data-theme=dark] .lvl.g{background:#1c3a2a;color:#86d9a8}
+html[data-theme=dark] .lvl.m{background:#3b2e16;color:#f2bb63}
+html[data-theme=dark] .lvl.b{background:#3b1f1f;color:#f3938a}
+html[data-theme=dark] .teamcol.tP{background:linear-gradient(160deg,#2e5fae,#1a3769)}
+html[data-theme=dark] .teamcol.tO{background:linear-gradient(160deg,#a9362f,#6a1e1a)}
+html[data-theme=dark] .teamcol li.now{color:#1c2337}
+html[data-theme=dark] .scale button{background:#141a2a;border-color:#3b4562}
+html[data-theme=dark] .qa .a{color:#bcc5d8}
+html[data-theme=dark] input[type=checkbox]{accent-color:var(--gold2)}
+html[data-theme=dark] .toast{background:#24375e}
+html[data-theme=dark] .vbox.U{background:#5a574f}
+html[data-theme=dark] .mback{background:rgba(5,8,16,.7)}
+html[data-theme=dark] .hero .sub2{color:var(--gold2)}
+/* przełącznik motywu */
+.themesw{display:inline-flex;border:1px solid #4a5a7d;border-radius:8px;overflow:hidden;margin-left:.35rem;align-self:center}
+.nav .themesw button{border:0;border-radius:0;padding:.32rem .5rem;color:#cfc8b3;display:inline-flex;align-items:center;justify-content:center;line-height:0}
+.nav .themesw button:hover{background:rgba(255,255,255,.08)}
+.nav .themesw button svg{width:17px;height:17px}
+.nav .themesw button.on{background:var(--gold);color:#fff}
